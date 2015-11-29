@@ -140,12 +140,12 @@ public class AdventureGameView extends GBFrame {
            myBox = new MessageBox(messageBox, "Your hands are full, you cannot pick up anything!");
            myBox.setVisible(true);
        }
-       else if (model.getPlayer().getLoc().roomEmpty()) {
-           myBox = new MessageBox(messageBox, "There are no items in this room!");
-           myBox.setVisible(true);
-       }
        else if (model.getPlayer().getLoc().isDark()) {
     	   myBox = new MessageBox(messageBox, "You can't grab any items in a dark room!");
+           myBox.setVisible(true);
+       }
+       else if (model.getPlayer().getLoc().roomEmpty()) {
+           myBox = new MessageBox(messageBox, "There are no items in this room!");
            myBox.setVisible(true);
        }
        else {

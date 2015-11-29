@@ -146,9 +146,5 @@ public class Player implements java.io.Serializable {
 	  return myThings;
   }
   
-  public void setItems(Item[] items) {
-	  myThings = items;
-  }
-
 }
 

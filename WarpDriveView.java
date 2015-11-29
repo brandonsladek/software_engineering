@@ -10,9 +10,9 @@ public class WarpDriveView extends GBFrame {
 
 	private static final long serialVersionUID = -5302442983322403868L;
 	
-	AdventureGameModelFacade model;
-	AdventureGameView view;
-    JButton[] itemButtons;
+	private AdventureGameModelFacade model;
+	private AdventureGameView view;
+    private JButton[] itemButtons;
     
     JLabel welcomeLabel = addLabel("Choose a room to teleport to:", 1, 1, 1, 1);
     
