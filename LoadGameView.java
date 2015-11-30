@@ -3,7 +3,6 @@ package esof322.a4;
 import java.io.File;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import BreezySwing.*;
 
 // Brandon Sladek
