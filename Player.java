@@ -37,7 +37,7 @@ public class Player implements java.io.Serializable {
   public void pickUp(Item i) {
 
 	if (i.getClass() == Flashlight.class) {
-		if (numBatteries == 1) {
+		if (numBatteries >= 1) {
 			int batNum = getBatteryItemNum();
 			
 			if (batNum != -1) {
