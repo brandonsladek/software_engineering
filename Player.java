@@ -38,11 +38,20 @@ public class Player implements java.io.Serializable {
 
 	if (i.getClass() == Flashlight.class) {
 		if (numBatteries == 1) {
-			itemCount = 0;
-			myThings[itemCount] = i;
-			itemCount++;
-			myLoc.removeItem(i);
-			hasFlashlight = true;
+			int batNum = getBatteryItemNum();
+			
+			if (batNum != -1) {
+				myThings[batNum] = i;
+				myLoc.removeItem(i);
+				hasFlashlight = true;
+			} else {
+				if (itemCount < 2) {
+					myThings[itemCount] = i;
+					itemCount++;
+					myLoc.removeItem(i);
+					hasFlashlight = true;
+				}
+			}
 		}
 	}
 	else if (itemCount < 2) {
@@ -58,6 +67,18 @@ public class Player implements java.io.Serializable {
         	hasWarpDrive = true;
         }
       }
+  }
+  
+  private int getBatteryItemNum() {
+	  if (myThings[0] != null && myThings[0].getClass() == Battery.class) {
+		  return 0;
+	  }
+	  else if (myThings[1] != null && myThings[1].getClass() == Battery.class) {
+		  return 1;
+	  }
+	  else {
+		  return -1;
+	  }
   }
 
   public boolean haveItem(Item itemToFind) {

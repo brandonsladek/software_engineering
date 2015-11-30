@@ -14,9 +14,9 @@ public class GrabView extends GBFrame {
 
 	private static final long serialVersionUID = 3855132358587821286L;
 	
-	AdventureGameModelFacade model;
-	AdventureGameView view;
-    JButton[] itemButtons;
+	private AdventureGameModelFacade model;
+	private AdventureGameView view;
+    private JButton[] itemButtons;
 
     /** Note model-facade argument.*/
     public GrabView(AdventureGameModelFacade model, AdventureGameView view) {

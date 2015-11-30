@@ -9,9 +9,9 @@ public class DropView extends GBFrame {
 
 	private static final long serialVersionUID = 3860017528308232651L;
 	
-	AdventureGameModelFacade model;
-	AdventureGameView view;
-    JButton[] itemButtons;
+	private AdventureGameModelFacade model;
+	private AdventureGameView view;
+    private JButton[] itemButtons;
 
     /** Note model-facade argument.*/
     public DropView(AdventureGameModelFacade model, AdventureGameView view) {

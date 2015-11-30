@@ -11,8 +11,8 @@ public class ChooseDifficultyView extends GBFrame {
 
 	private static final long serialVersionUID = 9112987195090654043L;
 	
-	static AdventureGameModelFacade model;
-	int level = -1;
+	private static AdventureGameModelFacade model;
+	private int level = -1;
 	
 	public ChooseDifficultyView() {}
 	

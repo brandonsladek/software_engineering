@@ -12,12 +12,10 @@ public class LoadGameView extends GBFrame {
 	
 	private static final long serialVersionUID = -5779166642099695934L;
 	
-	final JFileChooser fileChooser = new JFileChooser();
-	AdventureGameModelFacade model;
-	int returnValue;
-	File file;
-	
-	JLabel welcomeLabel = addLabel("Choose a file", 1, 1, 2, 1);
+	private final JFileChooser fileChooser = new JFileChooser();
+	private AdventureGameModelFacade model;
+	private int returnValue;
+	private File file;
 	
 	public LoadGameView() {
 		returnValue = fileChooser.showOpenDialog(LoadGameView.this);

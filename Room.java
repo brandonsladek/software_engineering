@@ -26,9 +26,8 @@ public class Room implements CaveSite, java.io.Serializable {
 	private static final long serialVersionUID = 4877373452359400189L;
 	
 	private String description;
-    boolean isDark = false;
-    String roomNumber;
-
+    private boolean isDark = false;
+    
     private CaveSite[] side = new CaveSite[6];
 
     private ArrayList<Item> contents = new ArrayList<Item>();

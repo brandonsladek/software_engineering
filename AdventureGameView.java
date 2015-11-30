@@ -40,8 +40,8 @@ public class AdventureGameView extends GBFrame {
    JButton downButton = addButton("Down",14,3,1,1);
    
    //Added JFrame message box in order to keep user duly informed
-   JFrame messageBox = new JFrame();
-   MessageBox myBox;
+   private JFrame messageBox = new JFrame();
+   private MessageBox myBox;
 
    private AdventureGameModelFacade model;
    
